@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cockpit
+Comment=Cliente web minimal de Cockṕit
+Exec=$HOME/.local/bin/cockpit-app
+Terminal=false
+Type=Application
+Categories=System;
+StartupWMClass=Cockpit
+Icon=#HOME/.local/share/icons/cockpit.png

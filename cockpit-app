@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+URL="http://localhost:9090"
+
+# Detecta Chromium
+if command -v chromium >/dev/null 2>&1; then
+  BROWSER="chromium"
+elif command -v chromium-browser >/dev/null 2>&1; then
+  BROWSER="chromium-browser"
+else
+  echo "No se encontró Chromium. Instálalo o ajusta este script." >&2
+  exit 1
+fi
+
+# Perfil separado para esta "app"
+PROFILE_DIR="$HOME/.config/cockpit-chromium-profile"
+
+exec "$BROWSER" \
+  --app="$URL" \
+  --class=Cockpit \
+  --name=Cockpit \
+  --user-data-dir="$PROFILE_DIR"
