@@ -90,4 +90,4 @@ Cockpit en su escritorio Linux de forma más limpia.
 
 ---
 
-Desarrollado por 5kr1k
+Desarrollado por Sergio Hernández
